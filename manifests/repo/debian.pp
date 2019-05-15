@@ -80,7 +80,7 @@ class php::repo::debian(
 
     # Add PHP 7.1 key + repository
     create_resources(::apt::key, { 'php::repo::debian-php71' => {
-      key => 'DF3D585DB8F0EB658690A554AC0E47584A7A714D', key_source => 'https://packages.sury.org/php/apt.gpg',
+      key => '15058500A0235D97F5D10063B188E2B695BD4743', key_source => 'https://packages.sury.org/php/apt.gpg',
     } })
 
     ::apt::source { 'source_php_71':
